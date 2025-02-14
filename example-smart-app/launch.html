@@ -27,7 +27,9 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': 'opala-smart-app',
-        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+        'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile',
+        'iss': 'https://tst.opala.tech',
+        'redirect_uri': 'https://melpars.github.io/example-smart-app/'
       });
     </script>
     <div class="spinner">
